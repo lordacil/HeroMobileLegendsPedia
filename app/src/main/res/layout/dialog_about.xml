@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        app:civ_border_width="8dp"
+        app:civ_border_color="@color/colorWhite"
+        android:src="@drawable/rizkys"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RIZKY NUGRAHA herliyanto"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:fontFamily="@font/ubuntu"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rizkynugrahaherliyanto28@gmail.com"
+        android:textColor="@color/nigga"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:fontFamily="@font/ubuntu"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+6289651816048"
+        android:textColor="@color/colorPrimary2"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:fontFamily="@font/ubuntu"/>
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/shape_two"
+        android:text="Kembali"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

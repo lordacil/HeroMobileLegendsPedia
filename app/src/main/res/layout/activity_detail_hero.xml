@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DetailHero">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@drawable/banner"></LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/picture"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/colorWhite"
+        app:civ_border_width="6dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="100dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/linear_layout"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:cardCornerRadius="4dp">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="-50dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Nama Hero"
+                android:textSize="30dp"
+                android:fontFamily="@font/gotham"
+                android:textColor="#5A6471"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="Role:"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:textColor="@color/birumuda"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:textSize="24dp"
+                android:fontFamily="@font/ubuntu"/>
+
+            <TextView
+                android:id="@+id/role"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Mage"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:textColor="#5A6471"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="65dp"
+                android:textSize="24dp"
+                android:fontFamily="@font/ubuntu"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="Specialist:"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:textColor="@color/birumuda"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="110dp"
+                android:textSize="24dp"
+                android:fontFamily="@font/ubuntu"/>
+
+            <TextView
+                android:id="@+id/special"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Burst Damage"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:textColor="#5A6471"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="130dp"
+                android:textSize="24dp"
+                android:fontFamily="@font/ubuntu"/>
+
+            <TextView
+                android:id="@+id/gold"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="32000"
+                android:layout_gravity="center|right"
+                android:gravity="center|right"
+                android:drawableRight="@drawable/battlepoint"
+                android:drawablePadding="5dp"
+                android:textColor="#5A6471"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="60dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/ubuntu"/>
+
+            <TextView
+                android:id="@+id/diamond"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="599 "
+                android:drawableRight="@drawable/diamond"
+                android:layout_gravity="center|right"
+                android:gravity="center|right"
+                android:textColor="#5A6471"
+                android:layout_marginEnd="20dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="130dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/ubuntu"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/card_view"
+            android:id="@+id/card_view_skill_one"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/grad">
+
+                <TextView
+                    android:id="@+id/namaskill1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Necromancy Spell - Passive"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/gotham"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutName_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gambarskill1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    app:civ_border_color="@color/light_blue_500"
+                    app:civ_border_width="4dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/gambarskill1"
+                    android:layout_toRightOf="@id/gambarskill1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/descskill1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/picture"
+                        android:text="Summoner yang bengkok menambah mantra okult pada target yang menerima damage dari Necromancer, yang berlangsung selama 5 detik."
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/card_view_skill_one"
+            android:id="@+id/card_view_skill_two"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/grad">
+
+                <TextView
+                    android:id="@+id/namaskill2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Necromancy Spell - Passive"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/gotham"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutName_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gambarskill2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    app:civ_border_color="@color/light_blue_500"
+                    app:civ_border_width="4dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/gambarskill2"
+                    android:layout_toRightOf="@id/gambarskill2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/descskill2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/picture"
+                        android:text="Summoner yang bengkok menambah mantra okult pada target yang menerima damage dari Necromancer, yang berlangsung selama 5 detik."
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/card_view_skill_two"
+            android:id="@+id/card_view_tri"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/grad">
+
+                <TextView
+                    android:id="@+id/namaskill3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Necromancy Spell - Passive"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/gotham"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutName_tri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gambarskill3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    app:civ_border_color="@color/light_blue_500"
+                    app:civ_border_width="4dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/gambarskill3"
+                    android:layout_toRightOf="@id/gambarskill3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/descskill3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/picture"
+                        android:text="Summoner yang bengkok menambah mantra okult pada target yang menerima damage dari Necromancer, yang berlangsung selama 5 detik."
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/card_view_tri"
+            android:id="@+id/card_view_four"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textAlignment="center"
+                android:background="@drawable/grad">
+
+                <TextView
+                    android:id="@+id/namaskill4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Necromancy Spell - Passive"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/gotham"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutName_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/gambarskill4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="16dp"
+                    app:civ_border_color="@color/light_blue_500"
+                    app:civ_border_width="4dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/gambarskill4"
+                    android:layout_toRightOf="@id/gambarskill4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/descskill4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/picture"
+                        android:text="Summoner yang bengkok menambah mantra okult pada target yang menerima damage dari Necromancer, yang berlangsung selama 5 detik."
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>
